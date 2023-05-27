@@ -105,7 +105,7 @@ Nota: Nella maggioranza dei casi, non capiterà in ambienti reali di riuscire a 
 Se invece abbiamo già fatto enumeration o anche un po' di OSINT e abbiamo già dei nomi, possiamo provare a sperare che qualche utente abbia l'attributo "UF_DONT_REQUIRE_PREAUTH" settato e che quindi sia possibile chiedere un ticket per conto di quell'utente.
 
 Per settare l'attributo è sufficiente, dal Domain Controller, andare su Server Manager -> Users and Computers -> Users -> utente target -> Properties -> Account -> Do Not Require Pre Authentication. Quindi Apply e Ok per confermare.
-![[Pasted image 20230119150323.png]]
+![](https://i.imgur.com/h7dXZej.png)
 
 Fatto ciò, se riproviamo l'attacco precedente potremo ottenere un ticket per Atom ed incontreremo una nuova challenge, cioè quella di provare ad ottenere la password dell'utente crackando il ticket.
 
